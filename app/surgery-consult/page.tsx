@@ -83,7 +83,7 @@ export default function SurgeryProstheticConsultLandingPage() {
                 <p className="mt-1 text-sm leading-6 text-zinc-300">Patients already missing teeth or facing multiple extractions.</p>
               </div>
               <div className="rounded-2xl border border-zinc-800 bg-black/40 p-4">
-                <p className="text-sm font-semibold text-white">Full-arch or larger restorative solutions</p>
+                <p className="text-sm font-semibold text-white">Full-arch or complex restorative solutions</p>
                 <p className="mt-1 text-sm leading-6 text-zinc-300">People exploring dentures, implants, or full-arch replacement.</p>
               </div>
               <div className="rounded-2xl border border-zinc-800 bg-black/40 p-4">
