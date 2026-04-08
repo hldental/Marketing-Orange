@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export const metadata = {
   title: "Surgery & Prosthetic Consultation Request",
-  description: "A consultation request page for patients exploring missing teeth, extractions, implants, dentures, or full-arch replacement.",
+  description: "A consultation request page for patients exploring missing teeth, extractions, implants, dentures, or complex restorative cases.",
 };
 
 const questions = [
