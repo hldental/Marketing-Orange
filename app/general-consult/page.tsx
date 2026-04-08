@@ -7,6 +7,7 @@ export const metadata = {
 
 const questions = [
   "Are you dealing with current pain, swelling, or a dental problem that needs attention soon?",
+  "Are you missing 6 or more teeth?",
   "Are you mainly looking for general dental care rather than full-arch replacement or major restorative treatment?",
   "Would you like help understanding what treatment you may need before committing to anything bigger?",
   "Do you want our team to call you to discuss the best next step?",
