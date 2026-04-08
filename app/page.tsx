@@ -14,10 +14,9 @@ export default function HomePage() {
         </div>
 
         <p className="text-sm font-semibold uppercase tracking-[0.28em] text-orange-400">Consult Marketing Pages</p>
-        <h1 className="mt-4 text-4xl font-bold tracking-tight md:text-5xl">Choose the consultation path that fits the patient best.</h1>
+        <h1 className="mt-4 text-4xl font-bold tracking-tight md:text-5xl">Choose the path that best fits you..</h1>
         <p className="mt-5 max-w-3xl text-lg leading-8 text-zinc-300">
-          This package includes two separate landing pages: one for surgery/prosthetic consults and one for general clinic consults.
-        </p>
+                  </p>
 
         <div className="mt-10 grid gap-6 md:grid-cols-2">
           <a href="/surgery-consult" className="rounded-3xl border border-zinc-700 bg-zinc-900 p-8 shadow-xl transition hover:-translate-y-0.5 hover:border-orange-500">
