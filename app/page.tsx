@@ -22,7 +22,7 @@ export default function HomePage() {
           <a href="/surgery-consult" className="rounded-3xl border border-zinc-700 bg-zinc-900 p-8 shadow-xl transition hover:-translate-y-0.5 hover:border-orange-500">
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-orange-400">Page 1</p>
             <h2 className="mt-3 text-2xl font-bold text-white">Surgery / Prosthetic Consult</h2>
-            <p className="mt-3 text-sm leading-6 text-zinc-300">Missing teeth, extractions, implants, dentures, and full-arch screening.</p>
+            <p className="mt-3 text-sm leading-6 text-zinc-300">Missing teeth, extractions, implants, dentures, and complex restorative cases.</p>
           </a>
 
           <a href="/general-consult" className="rounded-3xl border border-zinc-700 bg-zinc-900 p-8 shadow-xl transition hover:-translate-y-0.5 hover:border-orange-500">
