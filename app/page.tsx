@@ -26,7 +26,7 @@ export default function HomePage() {
           </a>
 
           <a href="/general-consult" className="rounded-3xl border border-zinc-700 bg-zinc-900 p-8 shadow-xl transition hover:-translate-y-0.5 hover:border-orange-500">
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-orange-400">
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-orange-400">Page 2</p>
             <h2 className="mt-3 text-2xl font-bold text-white">General Clinic Consult</h2>
             <p className="mt-3 text-sm leading-6 text-zinc-300">Pain, broken teeth, limited treatment, general evaluation, and unsure where to start.</p>
           </a>
