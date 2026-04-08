@@ -40,7 +40,7 @@ export default function SurgeryProstheticConsultLandingPage() {
               Answer a few quick questions so our team can understand your situation and call you to discuss whether a surgery/prosthetic consultation is the right next step.
             </p>
             <p className="mt-4 max-w-2xl text-lg leading-8 text-zinc-300">
-              This page is designed for patients exploring implants, dentures, extractions, full-arch replacement, or larger restorative solutions.
+              This page is designed for patients exploring implants, dentures, extractions, full arch or complex restorative solutions.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <a href="#consult-form" className="rounded-2xl bg-orange-500 px-6 py-3 text-sm font-semibold text-black shadow-lg transition hover:-translate-y-0.5 hover:bg-orange-600">
