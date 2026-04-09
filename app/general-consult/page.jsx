@@ -115,9 +115,7 @@ export default function GeneralClinicConsultLandingPage() {
                 </p>
               </div>
               <div>
-                <p className="text-sm font-semibold text-white">
-                  3. We call you
-                </p>
+                <p className="text-sm font-semibold text-white">3. We call you</p>
                 <p className="mt-1 text-sm leading-6 text-zinc-300">
                   If it looks like we can help, we will contact you to schedule
                   your visit.
@@ -143,18 +141,61 @@ export default function GeneralClinicConsultLandingPage() {
               limited treatment, a comprehensive exam, or guidance on where to
               begin.
             </p>
+
+            <div className="mt-6 space-y-4">
+              <div className="rounded-2xl border border-zinc-800 bg-black/40 p-4">
+                <p className="text-sm font-semibold text-white">
+                  Pain or urgent issues
+                </p>
+                <p className="mt-1 text-sm leading-6 text-zinc-300">
+                  Tooth pain, swelling, broken teeth, or problems that should be
+                  looked at soon.
+                </p>
+              </div>
+
+              <div className="rounded-2xl border border-zinc-800 bg-black/40 p-4">
+                <p className="text-sm font-semibold text-white">
+                  General care and evaluation
+                </p>
+                <p className="mt-1 text-sm leading-6 text-zinc-300">
+                  People who need an exam, diagnosis, or help understanding what
+                  treatment may be needed.
+                </p>
+              </div>
+
+              <div className="rounded-2xl border border-zinc-800 bg-black/40 p-4">
+                <p className="text-sm font-semibold text-white">
+                  Not sure where to start
+                </p>
+                <p className="mt-1 text-sm leading-6 text-zinc-300">
+                  A simple way to let our team guide you into the right
+                  appointment.
+                </p>
+              </div>
+            </div>
           </Card>
 
           <Card className="p-8 lg:p-10">
             <SectionLabel>Request a call</SectionLabel>
+            <h2 className="mt-4 text-2xl font-bold text-white">
+              Answer a few questions below.
+            </h2>
+            <p className="mt-4 max-w-2xl text-base leading-7 text-zinc-300">
+              If it looks like general care is the right place to start, our
+              team will call you to discuss your situation and help schedule
+              your visit.
+            </p>
 
             <form
               className="mt-8 grid gap-6"
               action="https://formspree.io/f/mykbovqo"
               method="POST"
             >
-              {/* 🔥 THIS IS THE MAGIC LINE */}
-              <input type="hidden" name="_redirect" value="https://yourdomain.com/thank-you" />
+              <input
+                type="hidden"
+                name="_redirect"
+                value="https://huntlinedentalgroup.com/thank-you"
+              />
 
               <div className="grid gap-6">
                 {questions.map((question, index) => (
@@ -165,7 +206,6 @@ export default function GeneralClinicConsultLandingPage() {
                     <p className="text-sm font-semibold text-white">
                       {index + 1}. {question}
                     </p>
-
                     <div className="mt-4 grid gap-3 sm:grid-cols-2">
                       <label className="flex cursor-pointer items-center gap-3 rounded-xl border border-zinc-700 px-4 py-3 text-sm text-zinc-300 hover:border-orange-500">
                         <input
@@ -174,10 +214,9 @@ export default function GeneralClinicConsultLandingPage() {
                           value="Yes"
                           required
                           className="accent-orange-500"
-                        />{" "}
+                        />
                         Yes
                       </label>
-
                       <label className="flex cursor-pointer items-center gap-3 rounded-xl border border-zinc-700 px-4 py-3 text-sm text-zinc-300 hover:border-orange-500">
                         <input
                           type="radio"
@@ -185,7 +224,7 @@ export default function GeneralClinicConsultLandingPage() {
                           value="No"
                           required
                           className="accent-orange-500"
-                        />{" "}
+                        />
                         No
                       </label>
                     </div>
@@ -193,17 +232,78 @@ export default function GeneralClinicConsultLandingPage() {
                 ))}
               </div>
 
-              <input
-                name="name"
-                type="text"
-                required
-                placeholder="Full Name"
-                className="rounded-2xl border border-zinc-700 bg-black px-4 py-3"
-              />
+              <div className="grid gap-5 sm:grid-cols-2">
+                <label className="grid gap-2 text-sm font-medium text-zinc-200">
+                  Full Name
+                  <input
+                    name="name"
+                    type="text"
+                    required
+                    className="rounded-2xl border border-zinc-700 bg-black px-4 py-3 text-zinc-100 outline-none transition focus:border-orange-500"
+                    placeholder="Jane Smith"
+                  />
+                </label>
 
-              <input
-                name="phone"
-                type="tel"
-                required
-                placeholder="Phone"
-                className="rounded-
+                <label className="grid gap-2 text-sm font-medium text-zinc-200">
+                  Phone
+                  <input
+                    name="phone"
+                    type="tel"
+                    required
+                    className="rounded-2xl border border-zinc-700 bg-black px-4 py-3 text-zinc-100 outline-none transition focus:border-orange-500"
+                    placeholder="Phone"
+                  />
+                </label>
+              </div>
+
+              <div className="grid gap-5 sm:grid-cols-2">
+                <label className="grid gap-2 text-sm font-medium text-zinc-200">
+                  Email
+                  <input
+                    name="email"
+                    type="email"
+                    className="rounded-2xl border border-zinc-700 bg-black px-4 py-3 text-zinc-100 outline-none transition focus:border-orange-500"
+                    placeholder="jane@example.com"
+                  />
+                </label>
+
+                <label className="grid gap-2 text-sm font-medium text-zinc-200">
+                  Best Time to Call
+                  <select
+                    name="best_time"
+                    className="rounded-2xl border border-zinc-700 bg-black px-4 py-3 text-zinc-100 outline-none transition focus:border-orange-500"
+                    defaultValue=""
+                  >
+                    <option value="" disabled>
+                      Select one
+                    </option>
+                    <option value="Morning">Morning</option>
+                    <option value="Afternoon">Afternoon</option>
+                    <option value="Evening">Evening</option>
+                  </select>
+                </label>
+              </div>
+
+              <label className="grid gap-2 text-sm font-medium text-zinc-200">
+                Tell us a little about what is going on
+                <textarea
+                  name="notes"
+                  rows={4}
+                  className="rounded-2xl border border-zinc-700 bg-black px-4 py-3 text-zinc-100 outline-none transition focus:border-orange-500"
+                  placeholder="Pain, broken tooth, swelling, general exam, not sure what you need, etc."
+                />
+              </label>
+
+              <button
+                type="submit"
+                className="rounded-2xl bg-orange-500 px-6 py-4 text-sm font-semibold text-black shadow-lg transition hover:-translate-y-0.5 hover:bg-orange-600"
+              >
+                Request My Call
+              </button>
+            </form>
+          </Card>
+        </div>
+      </section>
+    </main>
+  );
+}
