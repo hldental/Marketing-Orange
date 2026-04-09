@@ -151,7 +151,6 @@ export default function SurgeryProstheticConsultLandingPage() {
                     <option value="" disabled>Select one</option>
                     <option value="Morning">Morning</option>
                     <option value="Afternoon">Afternoon</option>
-                    <option value="Evening">Evening</option>
                   </select>
                 </label>
               </div>
