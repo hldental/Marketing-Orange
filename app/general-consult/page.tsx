@@ -1,4 +1,5 @@
 import Image from "next/image";
+import type { ReactNode } from "react";
 
 export const metadata = {
   title: "General Dental Consultation Request",
@@ -27,7 +28,7 @@ function WebsiteButton() {
   );
 }
 
-function SectionLabel({ children }) {
+function SectionLabel({ children }: { children: ReactNode }) {
   return (
     <p className="text-xs font-semibold uppercase tracking-[0.28em] text-orange-400">
       {children}
@@ -35,7 +36,13 @@ function SectionLabel({ children }) {
   );
 }
 
-function Card({ children, className = "" }) {
+function Card({
+  children,
+  className = "",
+}: {
+  children: ReactNode;
+  className?: string;
+}) {
   return (
     <div
       className={`rounded-3xl border border-zinc-700 bg-zinc-900 shadow-xl ${className}`}
@@ -115,7 +122,9 @@ export default function GeneralClinicConsultLandingPage() {
                 </p>
               </div>
               <div>
-                <p className="text-sm font-semibold text-white">3. We call you</p>
+                <p className="text-sm font-semibold text-white">
+                  3. We call you
+                </p>
                 <p className="mt-1 text-sm leading-6 text-zinc-300">
                   If it looks like we can help, we will contact you to schedule
                   your visit.
